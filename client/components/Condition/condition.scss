@@ -1,0 +1,99 @@
+@import '../../style/variables.scss';
+
+.condition-wrapper {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+
+    box-sizing: border-box;
+
+    max-width: 600px;
+    max-height: 400px;
+
+
+    .foo {
+        position: absolute;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            //border-top: 250px solid transparent;
+            //border-bottom: 250px solid transparent;
+            //border-right: 300px solid $info-box-bg;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            //border-top: 250px solid transparent;
+            //border-bottom: 250px solid transparent;
+            //border-left: 300px solid $info-box-bg;
+        }
+
+        &.outer {
+            width: 600px;
+            height: 500px;
+            top: 0;
+            left: 0;
+
+            &:before {
+                border-top: 250px solid transparent;
+                border-bottom: 250px solid transparent;
+                border-right: 300px solid $border-color;
+            }
+
+            &:after {
+                border-top: 250px solid transparent;
+                border-bottom: 250px solid transparent;
+                border-left: 300px solid $border-color;
+            }
+        }
+        &.inner {
+            width: 500px;
+            height: 400px;
+            top: 50px;
+            left: 50px;
+
+            text-align: center;
+
+            &:before {
+                border-top: 200px solid transparent;
+                border-bottom: 200px solid transparent;
+                border-right: 250px solid $info-box-bg;
+            }
+
+            &:after {
+                border-top: 200px solid transparent;
+                border-bottom: 200px solid transparent;
+                border-left: 250px solid $info-box-bg;
+            }
+        }
+
+    }
+
+    .condition-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 50px;
+        margin: auto;
+        z-index: 5;
+        font-size: 36px;
+    }
+}

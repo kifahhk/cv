@@ -1,0 +1,60 @@
+@import '../../style/variables.scss';
+
+.button-wrapper {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+
+    transition: all $transition-duration-fast ease-in-out;
+
+    user-select: none;
+    box-sizing: border-box;
+    margin-bottom: -$button-radius;
+
+    width: $button-width;
+    height: $button-height;
+    background-color: $border-color;
+    border-radius: $button-radius;
+    right: 0;
+
+    .button-label {
+        transition: color $transition-duration-fast ease-in-out;
+        color: $label-color;
+        text-transform: uppercase;
+        font-size: $font-size-medium;
+        line-height: $line-height;
+    }
+
+    &.left {
+        margin-left: -$button-radius;
+        padding-right: $button-radius;
+        left: 0;
+        text-align: right;
+    }
+
+    &.right {
+        margin-right: -$button-radius;
+        padding-left: $button-radius;
+        right: 0;
+        text-align: left;
+    }
+
+    &.middle {
+        left: 0;
+        right: 0;
+        margin: 0 auto -$button-radius;
+        text-align: center;
+    }
+
+    &:hover {
+
+
+        background-color: $label-color;
+        .button-label {
+
+            color: $border-color;
+        }
+    }
+
+
+}

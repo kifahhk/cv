@@ -1,0 +1,588 @@
+[
+  {
+    "id": "start",
+    "headline": "Hallo lieber cyclos design",
+    "data": {
+      "title": "Persönliche Angaben",
+      "content" : [
+        {
+          "label": "Mein Name ist",
+          "text": "Kifah Seif"
+        },
+        {
+          "label": "Geboren am",
+          "text": "03.04.1985"
+        },
+        {
+          "label": "Ich bin",
+          "text": "ledig"
+        },
+        {
+          "label": "komme aus",
+          "text": "Syrien"
+        },
+        {
+          "label": "und wohne mit meiner Freundin seit 5 Monaten in",
+          "text": "Schillerstr. 94, 48155 Münster"
+        }
+      ]
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Mich kennenlernen!",
+      "index": "school"
+    },
+    "middle": null,
+    "left": {
+      "label": "Kontakt",
+      "text": "Wir kennen uns schon!",
+      "index": "contact"
+    }
+  },
+  {
+    "id": "school",
+    "headline": "Schulbildung",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "label": "2013-2015:",
+          "text": "Student an der Technische Universität (TU-Berlin) Anerkennungsprogramm für meinen Abschluss."
+        },
+        {
+          "label": "2006-2009:",
+          "text": "Abschluss in Informationstechnologie (Bachelor of Science) Universität Damaskus in Damaskus (Syrien)"
+        },
+        {
+          "label": "2004-2006:",
+          "text": "Abschluss als Assistent für Rechnertechnik (Diploma) Universität Damaskus in Damaskus (Syrien)"
+        },
+        {
+          "label": "31.07.2004:",
+          "text": "Hochschule (Gymnasium), Abitur Jaramana-Hochschule in Damaskus (Syrien)"
+        }
+      ]
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Weiter...",
+      "index": "condition-1"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Persönliche Angaben",
+      "index": "start"
+    }
+  },
+  {
+    "id": "condition-1",
+    "headline": "",
+    "condition": "Interessiert?",
+    "right": {
+      "label": "Ja",
+      "text": "Beruflichen Erfahrungen",
+      "index": "work-1"
+    },
+    "middle": null,
+    "left": {
+      "label": "Nein",
+      "text": "Feedback!",
+      "index": "feedback"
+    }
+  },
+  {
+    "id": "work-1",
+    "headline": "Berufliche Erfahrungen",
+    "data": {
+      "title": "November 2015 - Jetzt",
+      "content" : "Einsatz als Frontend-Web-Entwickler bei arvato Systems S4M GmbH in Rheda-Wiedenbrück",
+      "footer": "Schlüsselwörter: #HTML, #CSS, #NodeJs, #ES6, #ReactJs, #Redux"
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "mehr Erfahrungen",
+      "index": "work-2"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Zurück zur Schulbildung",
+      "index": "school"
+    }
+  },
+  {
+    "id": "work-2",
+    "headline": "Berufliche Erfahrungen",
+    "data": {
+      "title": "März 2013 – Sep 2015",
+      "content" : "Einsatz als Frontend-Web-Entwickler: Studentenwerk (20 Stunden pro Woche) bei BILD.de „BILDplus“ durch (BP Mediawork GmbH) in Berlin<br>Umbauen von dem internen System für Schüco International KG",
+      "footer": "Schlüsselwörter: #HTML, #CSS, #Javascript, #JQuery, #Handlebars, #JSON, #AJAX, #GruntJs"
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Mehr Erfahrungen",
+      "index": "work-3"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Zurück zur ersten Erfahrung",
+      "index": "work-1"
+    }
+  },
+  {
+    "id": "work-3",
+    "headline": "Berufliche Erfahrungen",
+    "data": {
+      "title": "Mai 2012 - November 2012",
+      "content" : "Einsatz als Software-Tester bei trustedSafe GmbH in Berlin",
+      "footer": "Schlüsselwörter: #C, #Visual-Studio 2012"
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Mehr Erfahrungen",
+      "index": "work-4"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Zurück zur letzten Erfahrung",
+      "index": "work-2"
+    }
+  },
+  {
+    "id": "work-4",
+    "headline": "Berufliche Erfahrungen",
+    "data": {
+      "title": "Juli 2009 - März 2011",
+      "content" : "Web-Entwickler (freiberufliche Tätigkeit) bei UNDP (United Nation Development Program) in Damaskus",
+      "footer": "Schlüsselwörter: #drupal, #Joomla, #PHP, #MySQL, #HTML, #CSS"
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Mehr Erfahrungen",
+      "index": "work-5"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Zurück zur letzten Erfahrung",
+      "index": "work-3"
+    }
+  },
+  {
+    "id": "work-5",
+    "headline": "Berufliche Erfahrungen",
+    "data": {
+      "title": "Juni 2007 - Juni 2009",
+      "content" : "Web-Entwickler bei GoraLab (Damaskus)",
+      "footer": "Schlüsselwörter: #C, #Visual-Studio 2012"
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Weiter...",
+      "index": "condition-2"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Zurück zur letzten Erfahrung",
+      "index": "work-4"
+    }
+  },
+  {
+    "id": "condition-2",
+    "headline": "",
+    "condition": "Schon Überzeugt?",
+    "right": {
+      "label": "Nicht ganz",
+      "text": "Zu den Projekten",
+      "index": "projects-1"
+    },
+    "middle": {
+      "label": "Gar nicht",
+      "text": "Feedback!",
+      "index": "feedback"
+    },
+    "left": {
+      "label": "JA",
+      "text": "Lade mich ein!",
+      "index": "contact"
+    }
+  },
+  {
+    "id": "projects-1",
+    "headline": "Projekte bei Bild.de",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "html": "<a href='https://www.peterboenisch.de/' target='_blank'>Peter Boenisch</a>"
+        },
+        {
+          "html": "<a href='http://www.bild.de/-38984690.bild.html' target='_blank'>Tsunami</a>"
+        },
+        {
+          "html": "<a href='http://www.bild.de/-37462648.bild.html' target='_blank'>Pflegeheime</a>"
+        },
+        {
+          "html": "<a href='http://www.bild.de/-37070088.bild.html' target='_blank'>Fritz Rümmelein</a>"
+        },
+        {
+          "html": "<a href='http://www.bild.de/-32673112.bild.html' target='_blank'>Nobelpreise</a>"
+        },
+        {
+          "html": "<a href='http://www.bild.de/-33338936.bild.html' target='_blank'>Sterbehilfe</a>"
+        }
+      ],
+      "footer": "Dies ist nur eine Auswahl der zahlreichen Projekte, die wir mit viel Freude und Leidenschaft entwickelt und umgesetzt haben."
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Mehr Projekte",
+      "index": "projects-2"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Berufliche Erfahrungen",
+      "index": "work-1"
+    }
+  },
+  {
+    "id": "projects-2",
+    "headline": "Sonstige Projekte",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "html": "<a href='http://pertext.de/' target='_blank'>Pertext</a>"
+        },
+        {
+          "html": "<a href='http://cr.kifahseif.de/' target='_blank'>Code Runner</a>"
+        },
+        {
+          "html": " <a href='http://www.welttrends.de' target='_blank'>Welttrends</a>"
+        },
+        {
+          "html": "<a href='http://www.solareclipse.visual-kama.com/' target='_blank'>Solar Eclipse</a>"
+        },
+        {
+          "html": "<a href='http://friedenskreis-syrien.de/' target='_blank'>Friedenskreis-syrien</a>"
+        }
+      ],
+      "footer": ""
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Weiter...",
+      "index": "condition-3"
+    },
+    "middle": null,
+    "left": {
+      "label": "Zurück",
+      "text": "Projekte",
+      "index": "projects-1"
+    }
+  },
+  {
+    "id": "condition-3",
+    "headline": "",
+    "condition": "Und Jetzt?",
+    "right": {
+      "label": "Nicht ganz",
+      "text": "Technisches Wissen und mehr",
+      "index": "technical"
+    },
+    "middle": {
+      "label": "Gar nicht",
+      "index": "feedback"
+    },
+    "left": {
+      "label": "JA",
+      "text": "Lade mich ein!",
+      "index": "contact"
+    }
+  },
+  {
+    "id": "technical",
+    "headline": "Technisches Wissen",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "label": "HTML, HTML5",
+          "text": "Sehr gut"
+        },
+        {
+          "label": "Javascript, JQuery",
+          "text": "Sehr gut"
+        },
+        {
+          "label": "CSS, CSS3, SASS",
+          "text": "Sehr gut"
+        },
+        {
+          "label": "SQL, MySQL, MongoDB",
+          "text": "Gut"
+        },
+        {
+          "label": "PHP, Java, C#",
+          "text": "Gut"
+        },
+        {
+          "label": "Python, Ruby",
+          "text": "Grundkenntnisse"
+        }
+      ]
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Sonstiges",
+      "index": "others"
+    },
+    "middle": {
+      "label": "OK Überzeugt!",
+      "index": "contact"
+    },
+    "left": {
+      "label": "Zurück",
+      "text": "Projekte",
+      "index": "projects-1"
+    }
+  },
+  {
+    "id": "others",
+    "headline": "Sonstiges",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "label": "MVC: ",
+          "text": "Laravel und ReactJs"
+        },
+        {
+          "label": "Agile Softwareentwicklung ",
+          "text": "mit Kanban Board"
+        },
+        {
+          "label": "Templating mit ",
+          "text": "Handlebars"
+        },
+        {
+          "label": "Komminukation mit ",
+          "text": "Atlassian Jira und Confluence"
+        },
+        {
+          "label": "Test ",
+          "text": "Mit Jasmine, mocha sowie chai"
+        },
+        {
+          "label": "Betriebssysteme ",
+          "text": "Microsoft Windows, Mac OS, Linux Ubuntu"
+        },
+        {
+          "label": "Sonstiges ",
+          "text": "Babel, Webpack, Redux, Sussy, ES6, usw..."
+        }
+      ]
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Sprachkenntnisse",
+      "index": "languages"
+    },
+    "middle": {
+      "label": "OK Überzeugt!",
+      "index": "contact"
+    },
+    "left": {
+      "label": "Zurück",
+      "text": "Technisches Wissen",
+      "index": "technical"
+    }
+  },
+  {
+    "id": "languages",
+    "headline": "Sprachkenntnisse",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "label": "Arabisch ",
+          "text": "Muttersprache"
+        },
+        {
+          "label": "Englisch ",
+          "text": "Sehr gut in Wort und Schrift"
+        },
+        {
+          "label": "Deutsch",
+          "text": "Sehr gut in Wort und Schrift"
+        },
+        {
+          "label": "Spanisch",
+          "text": "Grundkenntnisse (Niveau A2)"
+        }
+      ]
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Mehr zu mir",
+      "index": "more"
+    },
+    "middle": {
+      "label": "OK Überzeugt!",
+      "index": "contact"
+    },
+    "left": {
+      "label": "Zurück",
+      "text": "Sonstiges",
+      "index": "others"
+    }
+  },
+  {
+    "id": "more",
+    "headline": "Mehr zu mir",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "label": "Interessen ",
+          "text": "Musik, Filme, Animation, Kochen, Reisen, Basketball und Tanzen"
+        },
+        {
+          "label": "Lieblingszitat ",
+          "text": "“In order to survive we cling to all we know and understand, and we label it reality, but knowledge and understanding are ambiguous. That reality could be an illusion.”"
+        },
+        {
+          "label": "Ich mag ",
+          "text": "Web- und Frontend-Entwicklung, Herausforderungen, Flexibilität und Verantwortung."
+        },
+        {
+          "label": "Ich mag nicht ",
+          "text": "Papierkram , Bürokratie und langweilige Routine."
+        }
+      ]
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "Nerd-Klassifizierung",
+      "index": "nerd"
+    },
+    "middle": {
+      "label": "OK Überzeugt!",
+      "index": "contact"
+    },
+    "left": {
+      "label": "Zurück",
+      "text": "Sprachkenntnisse",
+      "index": "languages"
+    }
+  },
+  {
+    "id": "nerd",
+    "headline": "Nerd-Klassifizierung",
+    "data": {
+      "title": "",
+      "content" : [
+        {
+          "label": "",
+          "text": "- Ich setze mich mindestens zweimal pro Woche vor dem Fernseher um japanische Animes zu schauen."
+        },
+        {
+          "label": "",
+          "text": "- Ich gucke gerade alle Staffeln von der „Simpsons“ zum sechsten Mal, und habe nicht vor in der Zukunft aufzuhören."
+        },
+        {
+          "label": "",
+          "text": "- Ich habe neulich ein PlayStation 4 von meiner Freundin als Belohnung geschenkt bekommen, weil ich seit einem Jahr rauchfrei leben. Also Videospiele kommen auch in der Kategorie."
+        }
+      ]
+    },
+    "right": {
+      "label": "Weiter",
+      "text": "",
+      "index": "condition-4"
+    },
+    "left": {
+      "label": "Zurück",
+      "text": "Mehr zu mir",
+      "index": "more"
+    }
+  },
+  {
+    "id": "condition-4",
+    "headline": "",
+    "condition": "Möchtest Du mich einladen?",
+    "right": {
+      "label": "Ja",
+      "text": "Cool!",
+      "index": "contact"
+    },
+    "middle": {
+      "label": "Nochmal",
+      "index": "start"
+    },
+    "left": {
+      "label": "Nein",
+      "text": "schade :( Feedback?",
+      "index": "feedback"
+    }
+  },
+  {
+    "id": "contact",
+    "headline": "Kontakt",
+    "data": {
+      "title": "Es freut mich Dich hier zu sehen",
+      "content" :  [
+        {
+          "label": "Mein E-Mail:",
+          "text": "kifahhk@gmail.com"
+        },
+        {
+          "label": "Webseite:",
+          "text": "kifahseif.de"
+        },
+        {
+          "label": "Telefon:",
+          "text": "0176 78888 596"
+        }
+      ]
+    },
+    "right": null,
+    "middle": {
+      "label": "Vom Anfang",
+      "index": "start"
+    },
+    "left": null
+  },
+  {
+    "id": "feedback",
+    "headline": "Kontakt",
+    "data": {
+      "title": "Schade :( aber ich freue mich auf Feedbacks",
+      "content" :  [
+        {
+          "label": "Mein E-Mail:",
+          "text": "kifahhk@gmail.com"
+        },
+        {
+          "label": "Webseite:",
+          "text": "kifahseif.de"
+        },
+        {
+          "label": "Telefon:",
+          "text": "0176 78888 596"
+        }
+      ]
+    },
+    "right": null,
+    "middle": {
+      "label": "Vom Anfang",
+      "index": "start"
+    },
+    "left": null
+  }
+]

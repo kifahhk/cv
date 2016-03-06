@@ -1,0 +1,60 @@
+@import '../../../style/variables.scss';
+@import '../../../style/animation.scss';
+
+.info-wrapper {
+    line-height: 1.5;
+
+    a {
+        color: $link-color;
+
+        &:hover {
+            color: $link-active-color;
+        }
+    }
+}
+
+.info-title {
+    color: $text-color;
+    font-size: $font-size-large;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: $spacer-30 0;
+}
+
+.info-content-list {
+    color: $text-color;
+    list-style: none;
+    font-size: $font-size-medium;
+    margin: 0 $spacer-30;
+    padding: 0;
+
+    .info-content-item {
+        margin-bottom: 15px;
+
+
+    }
+
+    .info-content-item-label {
+        font-weight: bold;
+        //text-decoration: underline;
+    }
+
+
+
+}
+
+.info-content-text {
+    color: $text-color;
+    font-size: $font-size-medium;
+    margin: 0 $spacer-30;
+}
+
+.info-footer {
+    position: absolute;
+    bottom: 10px;
+    color: $text-color-footer;
+    font-size: $font-size-small;
+    margin: 0 $spacer-30;
+    text-align: left;
+}

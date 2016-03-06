@@ -1,0 +1,19 @@
+@import '../../style/variables.scss';
+
+.logo {
+    position: fixed;
+    width: $logo-size;
+    height: auto;
+    top: $logo-margin;
+
+    z-index: 100;
+
+    &.left {
+        left: $logo-margin;
+    }
+
+    &.right {
+        right: $logo-margin;
+        width: 180px;
+    }
+}

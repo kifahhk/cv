@@ -1,0 +1,58 @@
+@import '../../style/variables.scss';
+
+.arrow {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: $border-width;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: $border-width;
+    background-color: $border-color;
+
+    &.left {
+        left: 0;
+        padding-left: 100px;
+        text-align: left;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: -30px;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-right: 80px solid $border-color;
+            background-color: $body-bg;
+        }
+    }
+
+    &.right {
+        right: 0;
+        padding-right: 100px;
+        text-align: right;
+
+        &:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: -30px;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 80px solid $border-color;
+            background-color: $body-bg;
+        }
+
+    }
+
+
+    .arrow-text {
+        color: $label-color;
+    }
+
+}
