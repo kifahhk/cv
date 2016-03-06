@@ -15,20 +15,27 @@
         animation: scalePage $transition-duration-very-slow both;
     }
 
-    &.rtl {
+    &.rtlt {
         animation: FromRightToLeftThenTop $transition-duration-very-slow both;
     }
 
-    &.mrtl {
-        animation: FromMiddleToLeftThenMiddle $transition-duration-very-slow both;
+    &.mrtlt {
+        animation: FromMiddleToLeftThenTop $transition-duration-very-slow both;
     }
 
-    &.mltr {
-        animation: FromMiddleToRightThenMiddle $transition-duration-very-slow both;
+    &.mltrt {
+        animation: FromMiddleToRightThenTop $transition-duration-very-slow both;
     }
 
-    &.ltr {
+    &.ltrt {
         animation: FromLeftToRightThenTop $transition-duration-very-slow both;
+    }
+
+    &.ltrb {
+        animation: FromLeftToRightThenBottom $transition-duration-very-slow both;
+    }
+    &.mltrb {
+        animation: FromMiddleToRightThenBottom $transition-duration-very-slow both;
     }
 
     .rect-bar {
@@ -49,6 +56,19 @@
         .rect-bar {
             right: 0;
             border-width: $border-width 0 0 $border-width;
+            margin-right: -$spacer-20;
+        }
+    }
+
+    &.out-of-canvas-left-2 {
+        z-index: 1;
+        left: -100%;
+        background-color: $body-bg;
+
+        .rect-bar {
+            right: 0;
+            top: -50%;
+            border-width: 0 0 $border-width $border-width;
             margin-right: -$spacer-20;
         }
     }

@@ -31,7 +31,7 @@ module.exports = {
   entry: {
     app: [
       'webpack-hot-middleware/client?path=' + HMR_HOST,
-      './client/index.js'
+      './client/app.js'
     ]
   },
 

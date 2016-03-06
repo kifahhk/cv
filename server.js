@@ -25,6 +25,8 @@ const Html = ({
       <title>{title}</title>
       {favicon && <link rel='shortcut icon' href={favicon} />}
       {stylesheet && <link rel='stylesheet' href={stylesheet} />}
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.11.0/fetch.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.2.1/es6-promise.min.js"></script>
     </head>
     <body>
       <div id='root' dangerouslySetInnerHTML={{ __html: body }} />

@@ -21,7 +21,7 @@ module.exports = {
   devtool: 'source-map',
 
   entry: {
-    app: ['./client/index.js'],
+    app: ['./client/app.js'],
   },
 
   output: {

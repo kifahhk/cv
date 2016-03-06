@@ -9,7 +9,7 @@ import NotFound from "./pages/404";
 export const routes = (
   <Route path='/' title='CV' component={Index}>
 
-    <IndexRoute component={Index} />
+    <IndexRoute title='CV' component={Index} />
 
     <Route path='*' title='404: Not Found' component={NotFound} />
 

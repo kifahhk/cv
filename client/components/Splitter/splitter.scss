@@ -1,0 +1,27 @@
+@import '../../style/variables.scss';
+
+.splitter {
+
+    position: absolute;
+    height: 50%;
+    width: $border-width;
+    box-sizing: border-box;
+
+    z-index: -1;
+
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    background-color: $border-color;
+
+
+    &.top {
+        top: 0;
+    }
+
+    &.bottom {
+        bottom: 0;
+    }
+}

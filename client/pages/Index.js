@@ -12,19 +12,20 @@ export default class Index extends Component {
     loaded: false,
     animation: "",
     data: null,
+    splitterPosition: "top",
     index: "start"
   };
 
   componentDidMount() {
     fetch(data)
         .then(function (response) {
-          console.log('res json', response);
+          //console.log('res json', response);
           return response.json()
         }).then(function (json) {
-      console.log('parsed json', json, this);
+      //console.log('parsed json', json, this);
       this.fetchData(json);
     }.bind(this)).catch(function (ex) {
-      console.error('parsing failed', ex)
+      //console.error('parsing failed', ex)
     })
   }
 
@@ -36,12 +37,20 @@ export default class Index extends Component {
     });
   }
 
-  onLeft(newIndex) {
-    this.changePage(newIndex, "ltr");
+  onLeft(newIndex, isCondition) {
+    //console.log(newIndex);
+    let newDir = typeof isCondition === "undefined" && newIndex !== "contact" ? "ltrb" : "ltrt";
+    this.setState({
+      splitterPosition: newDir === "ltrb" ? "bottom" : "top"
+    });
+    this.changePage(newIndex, newDir);
   }
 
   onRight(newIndex) {
-    this.changePage(newIndex, "rtl");
+    this.setState({
+      splitterPosition: "top"
+    });
+    this.changePage(newIndex, "rtlt");
   }
 
   onMiddle(newIndex) {
@@ -50,22 +59,17 @@ export default class Index extends Component {
 
   changePage(newIndex, animationClassName) {
     //console.log(newIndex, animationClassName);
-    let animClass = animationClassName === this.state.animation ? "new-" + animationClassName : animationClassName;
-
     this.setState({
       index: newIndex,
-      animation: animClass
+      animation: animationClassName
     });
-
-    this.resetAnimationClass();
   }
 
-  resetAnimationClass() {
-    setTimeout(function () {
-      this.setState({
-        animation: ""
-      });
-    }.bind(this), 1000)
+  resetAnimationClass(e) {
+    //console.log(e, this.state.animation);
+    this.setState({
+      animation: ""
+    });
   }
 
   getItem() {
@@ -82,7 +86,9 @@ export default class Index extends Component {
 
   render() {
     const item = this.getItem();
-    const {animation} = this.state;
+    const {animation, splitterPosition} = this.state;
+    const typeOfLeftPage = animation && animation === "ltrb" ? "out-of-canvas-left-2" : "out-of-canvas-left";
+
 
     return (
         <Layout>
@@ -92,16 +98,20 @@ export default class Index extends Component {
               <Page
                   {...item}
                   type="normal"
+                  splitterPosition={splitterPosition}
+                  onAnimationEnd={this.resetAnimationClass.bind(this)}
                   animation={animation}
               />
               <Page
                   {...item}
-                  type="out-of-canvas-left"
+                  type={typeOfLeftPage}
+                  onAnimationEnd={this.resetAnimationClass.bind(this)}
                   animation={animation}
               />
               <Page
                   {...item}
                   type="out-of-canvas-right"
+                  onAnimationEnd={this.resetAnimationClass.bind(this)}
                   animation={animation}
               />
               <Navigation

@@ -22,14 +22,14 @@ export default class Navigation extends Component {
   };
 
   render() {
-    const { left, middle, right, onLeft, onRight, onMiddle} = this.props;
+    const { left, middle, right, onLeft, onRight, onMiddle, condition} = this.props;
 
     return (
 
         <div className="navigation">
 
           <If condition={left}>
-            <Button position="left" label={left.label} onClick={(e) => onLeft(left.index)}/>
+            <Button position="left" label={left.label} onClick={(e) => onLeft(left.index, condition)}/>
           </If>
 
           <If condition={right}>
