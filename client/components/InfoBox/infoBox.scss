@@ -11,6 +11,9 @@
     margin: auto;
     z-index: 10;
 
+    box-shadow: inset 0 0 10px $text-color;
+
+
     border: solid $border-width $border-color;
     background-color: $info-box-bg;
 

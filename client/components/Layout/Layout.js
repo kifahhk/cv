@@ -4,8 +4,7 @@ import './layout.scss';
 import Logo from '../Logo/Logo';
 
 
-import logoLeft from './../../assets/favicon.png';
-import logoRight from './../../assets/cyclos-design.png';
+import logoLeft from './../../assets/logo.png';
 
 
 export default class Layout extends Component {
@@ -22,14 +21,9 @@ export default class Layout extends Component {
         <div className="wrapper">
           <div>
             <Logo src={logoLeft} position="left"/>
-            <Logo src={logoRight} position="right"/>
             {children}
           </div>
         </div>
     );
   }
 }
-/*
- <Logo src="./assets/favicon.png" position="left"/>
- <Logo src="./assets/cyclos-design.png" position="right"/>
- */
