@@ -5,6 +5,7 @@ import Logo from '../Logo/Logo';
 
 
 import logoLeft from './../../assets/logo.png';
+import logoRight from './../../assets/tw-logo.svg';
 
 
 export default class Layout extends Component {
@@ -21,6 +22,7 @@ export default class Layout extends Component {
         <div className="wrapper">
           <div>
             <Logo src={logoLeft} position="left"/>
+            <Logo src={logoRight} position="right"/>
             {children}
           </div>
         </div>
