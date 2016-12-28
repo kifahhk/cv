@@ -4,8 +4,8 @@ import './layout.scss';
 import Logo from '../Logo/Logo';
 
 
-import logoLeft from './../../assets/logo.png';
-import logoRight from './../../assets/tw-logo.svg';
+import logoLeft from './../../assets/favicon.png';
+import logoRight from './../../assets/inventivo.png';
 
 
 export default class Layout extends Component {
